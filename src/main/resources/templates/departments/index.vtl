@@ -1,28 +1,20 @@
-<p class = "pageHeader">All Managers</p>
+<p class = "pageHeader">All Departments</p>
 
 <div>
-    <a href="/managers/new" class="button center">New Manager</a>
+    <a href="/departments/new" class="button center">New Department</a>
 </div>
 
 <div class="container">
     <table>
         <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Salary(£)</th>
-            <th>Department</th>
-            <th>Budget(£)</th>
+            <th>Title</th>
         </tr>
 
 
-        #foreach($manager in $managers)
+        #foreach($department in $departments)
 
         <tr>
-            <td>$manager.getFirstName()</td>
-            <td>$manager.getLastName()</td>
-            <td>$manager.getSalary()</td>
-            <td>$manager.getDepartment().getTitle()</td>
-            <td>$manager.getBudget()</td>
+            <td>$department.getTitle()</td>
         </tr>
 
         #end

@@ -1,3 +1,53 @@
-body {
-    background-color: green;
+
+header h1 {
+  font-size: 36px;
+  margin: 19px 50px 19px 5px;
+  color: rgb(79, 121, 156);
 }
+
+header nav {
+  display: inline-flex;
+  justify-content: space-between;
+  margin-right: 50px;
+  margin-top: 22px;
+
+}
+
+header p {
+  font-size: 20px;
+  padding: 0 22px;
+  margin: 0;
+}
+
+.jumbotron {
+  display: flex;
+  border: 3px solid rgb(79, 121, 156);
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  color: black;
+  height: 600px;
+  margin: 40px 40px 20px 40px;
+  padding: 0;
+  overflow-x: scroll;
+}
+
+.jumbotron p {
+  margin-top: 50px;
+  font-size: 32px;
+}
+
+th {
+  padding: 10px;
+  color: rgb(79, 121, 156);
+  font-size: 16px;
+}
+
+td {
+  padding-left: 10px;
+}
+
+.container{
+  margin-left: 100px;
+}
+

@@ -2,13 +2,29 @@
 <html>
 <head>
     <title>Employee Records</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<!-- begin inner template-->
-    <div class="container">
-        #parse( $template )
-    </div>
-<!-- end inner template-->
+
+    <header class="container-fluid">
+        <div class="row">
+            <h1 class="col-sm-4">Company Database</h1>
+            <nav class="col-sm-6 col-sm-offset-1 text-center">
+                <p><a href="/employees">All Employees</a></p>
+                <p><a href="/managers">Managers</a></p>
+                <p><a href="/engineers">Engineers</a></p>
+                <p><a href="/departments">Departments</a></p>
+            </nav>
+        </div>
+    </header>
+
+    <section class="jumbotron">
+        <div class="container-fluid" style="width: 1300px">
+            #parse( $template )
+        </div>
+    </section>
+
 </body>
 </html>
