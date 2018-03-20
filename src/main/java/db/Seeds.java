@@ -1,7 +1,6 @@
 package db;
 
 import models.Department;
-import models.Employee;
 import models.Engineer;
 import models.Manager;
 
@@ -10,7 +9,6 @@ public class Seeds {
     public static void seedData() {
 
         DBHelper.deleteAll(Engineer.class);
-        DBHelper.deleteAll(Employee.class);
         DBHelper.deleteAll(Manager.class);
         DBHelper.deleteAll(Department.class);
 

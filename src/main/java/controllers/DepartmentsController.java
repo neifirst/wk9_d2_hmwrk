@@ -47,5 +47,7 @@ public class DepartmentsController {
             res.redirect("/departments");
             return null;
         }, new VelocityTemplateEngine());
+
+
     }
 }

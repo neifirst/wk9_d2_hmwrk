@@ -1,4 +1,4 @@
-<p class = "pageHeader" class=""col-sm-2"">All Managers</p>
+<p class = "pageHeader" class="col-sm-2">All Managers</p>
 
 <div>
     <a href="/managers/new" class="button center">New Manager</a>
@@ -12,6 +12,7 @@
             <th>Salary(£)</th>
             <th>Department</th>
             <th>Budget(£)</th>
+            <th></th>
         </tr>
 
 
@@ -23,6 +24,11 @@
             <td>$manager.getSalary()</td>
             <td>$manager.getDepartment().getTitle()</td>
             <td>$manager.getBudget()</td>
+            <td>
+                <form method="POST" action="/managers/$manager.getId/delete">
+                    <input class="bin" type="image" name="delete" src="/images/delete.png"/>
+                </form>
+            </td>
         </tr>
 
         #end
